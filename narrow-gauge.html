@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="header-brand">BTI</a>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <a href="cases.html" class="header-cases">Cases</a>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="photo-narrow-gauge">
+        </div>
+        <section class="photo-details">
+          <h1>The Rhodope Narrow Gauge</h1>
+            <div class="photo-description">
+              <p>
+                This is one of my favorite photos. The last narrow-gauge in Bulgaria. I took the picture on the outskirts of Dobrinishte. The train route passes through the picturesque gorge of Chepinska River. The starting point of the line is
+                the town of Septemvri and the final is Dobrinishte, where I took the picture. Both cities are very nice and beautiful places. I highly recommend it to any nature lover.
+                <br>
+                <br>For more details about the photo click <a href="https://www.flickr.com/photos/163846156@N03/48224929542/in/dateposted-public/" target="_blank">here</a>.
+              </p>
+          </div>
+          <div class="camera-details">
+            <p>
+              Camera Type - Digital SLR
+              <br>
+              <br>Camera ID - 54194
+              <br>
+              <br>Aperture - ƒ/8.0
+              <br>
+              <br>Exposure Time - 1/250
+              <br>Focal length - 55.0 mm
+              <br>
+              <br>ISO - 200
+              <br>
+              <br>Metering Mode - Multi-segment
+              <br>
+              <br>Flash - off, did not fire
+            </p>
+          </div>
+        </section>
+        <section class="location">
+          <h2>The location where the photo was taken</h2>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var location = {lat: 41.826652, lng: 23.556122};
+              var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location
+              });
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtx7s_bNBZj4nlJhhjqmEFS4IxFd4ojSQ&callback=initMap"></script>
+        </section>
+      </div>
+    </main>
+    <div class="wrapper">
+      <footer>
+        <ul class="footer-links-main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Cases</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+        <ul class="footer-links-cases">
+          <li><p>Latest cases</p></li>
+          <li><a href="cases/projectAmplifier.html">PROJECT LOW FRQUENCY AMPLIFIER - ANALOG CIRCUITRY</a></li>
+          <li><a href="cases/eventManager.html">EVENT MANAGER - WEB DEVELOPMENT</a></li>
+          <li><a href="cases/electronicTermometer.html">ELECTRONIC THERMOMETER - SYTEM PROGRAMMING/EMBEDED SYSTEMS</a></li>
+          <li><a href="cases/photography.html">PHOTOGRAPHY</a></li>
+        </ul>
+        <div class="footer-sl">
+          <a href="https://www.facebook.com/blagovest.ivanov7447" target="_blank">
+            <img src="img/facebookLogoButton.png" alt="facebook icon">
+          </a>
+          <a href="https://www.flickr.com/photos/163846156@N03/" target="_blank">
+            <img src="img/flickrLogoButton.png" alt="fickr icon">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

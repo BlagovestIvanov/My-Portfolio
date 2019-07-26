@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="header-brand">BTI</a>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <a href="cases.html" class="header-cases">Cases</a>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="photo-lakatnik">
+        </div>
+        <section class="photo-details">
+          <h1>View From The Rocks Over Lakatnik</h1>
+            <div class="photo-description">
+              <p>
+                On this photo you can see one of the most beautiful places in Bulgaria - the view from the rocks over Lakatnik station. The place is not difficult to access and reveals an incredible view. From here you can see the whole village, the railway station and the Iskar River, which is responsible for the beauty of these rocks. I recommend everyone at least once to visit this place and enjoy it.
+                <br>
+                <br>For more details about the photo click <a href="https://www.flickr.com/photos/163846156@N03/48073442191/in/dateposted-public/" target="_blank">here</a>.
+              </p>
+          </div>
+          <div class="camera-details">
+            <p>
+              Camera Type - Digital SLR
+              <br>
+              <br>Camera ID - 54194
+              <br>
+              <br>Aperture - ƒ/10
+              <br>
+              <br>Exposure Time - 1/250
+              <br>Focal length - 22.0 mm
+              <br>
+              <br>ISO - 280
+              <br>
+              <br>Metering Mode - Multi-segment
+              <br>
+              <br>Flash - off, did not fire
+            </p>
+          </div>
+        </section>
+        <section class="location">
+          <h2>The location where the photo was taken</h2>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var location = {lat: 43.090646, lng: 23.384686};
+              var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location
+              });
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtx7s_bNBZj4nlJhhjqmEFS4IxFd4ojSQ&callback=initMap"></script>
+        </section>
+      </div>
+    </main>
+    <div class="wrapper">
+      <footer>
+        <ul class="footer-links-main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Cases</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+        <ul class="footer-links-cases">
+          <li><p>Latest cases</p></li>
+          <li><a href="cases/projectAmplifier.html">PROJECT LOW FRQUENCY AMPLIFIER - ANALOG CIRCUITRY</a></li>
+          <li><a href="cases/eventManager.html">EVENT MANAGER - WEB DEVELOPMENT</a></li>
+          <li><a href="cases/electronicTermometer.html">ELECTRONIC THERMOMETER - SYTEM PROGRAMMING/EMBEDED SYSTEMS</a></li>
+          <li><a href="cases/photography.html">PHOTOGRAPHY</a></li>
+        </ul>
+        <div class="footer-sl">
+          <a href="https://www.facebook.com/blagovest.ivanov7447" target="_blank">
+            <img src="img/facebookLogoButton.png" alt="facebook icon">
+          </a>
+          <a href="https://www.flickr.com/photos/163846156@N03/" target="_blank">
+            <img src="img/flickrLogoButton.png" alt="fickr icon">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
